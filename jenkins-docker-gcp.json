@@ -3,7 +3,7 @@
         {
             "type": "googlecompute",
             "account_file" : "",
-            "project_id" : "helpterraform",
+            "project_id" : "",
             "source_image" : "debian-9-stretch-v20200521",
             "ssh_username" : "packer",
             "zone" : "asia-east2-a",

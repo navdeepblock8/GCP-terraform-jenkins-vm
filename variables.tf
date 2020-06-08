@@ -1,7 +1,7 @@
 variable "project_name" {
     type = "string"
     description = "The name of the project to run the instance at."
-    default = "helpterraform" 
+    default = "" 
 }
 variable "region_name" {
     type = "string"
