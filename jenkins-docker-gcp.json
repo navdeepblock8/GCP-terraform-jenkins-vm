@@ -1,0 +1,21 @@
+{
+    "builders" : [
+        {
+            "type": "googlecompute",
+            "account_file" : "C:/Users/Dell/Downloads/helpterraform-62631737d386.json",
+            "project_id" : "helpterraform",
+            "source_image" : "debian-9-stretch-v20200521",
+            "ssh_username" : "packer",
+            "zone" : "asia-east2-a",
+            "image_name" : "jenkins-docker-image"
+        }
+    ],
+
+    "provisioners" :[
+        {
+            "type" : "shell",
+            "script" : "./scripts/jenkins-docker-gcp.sh"
+        }
+    ]
+    
+}
